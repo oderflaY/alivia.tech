@@ -12,14 +12,14 @@ export default function LoginScreen() {
       <View className="w-11/12 max-w-md bg-white rounded-2xl p-6 shadow-lg">
         <Image
           className="h-48 w-96 object-contain"
-          source={require("./../../images/logo-alivia-color.png")}
+          source={require("./../../assets/images/Logo_alivia_color.png")}
         />
 
-        <Text className="text-center text-lg font-semibold mb-4">
+        <Text className="text-center text-lg font-semibold mb-4  font-lato-bold">
           Iniciar sesión
         </Text>
 
-        <Text className="text-gray-600 mb-1">Correo</Text>
+        <Text className="text-gray-600 mb-1 font-lato-bold">Correo</Text>
         <TextInput
           placeholder="Ingresar correo"
           value={email}
@@ -29,7 +29,7 @@ export default function LoginScreen() {
         />
 
         {/* Input Contraseña */}
-        <Text className="text-gray-600 mb-1">Contraseña</Text>
+        <Text className="text-gray-600">Contraseña</Text>
         <TextInput
           placeholder="Ingresar contraseña"
           value={password}
